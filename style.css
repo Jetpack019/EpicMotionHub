@@ -9,6 +9,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 header{
     display: flex;
@@ -32,4 +33,29 @@ header nav ul li a{
 
 header nav ul li a:hover{
     color: #cac9c9;
+}
+
+
+/* Intro */
+section .hero_section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.hero_section .shapes_animation {
+    display: flex;
+    position: relative;
+}
+
+.hero_section .circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #547274;
+    margin: 20px;
+
+    transition: transform 1s ease-in-out;
 }
