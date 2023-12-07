@@ -9,7 +9,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+
 }
 header{
     display: flex;
@@ -58,4 +58,69 @@ section .hero_section {
     margin: 20px;
 
     transition: transform 1s ease-in-out;
+}
+
+
+/* Scroll Animation In */
+section .scroll_animation_in {
+    height: 100vh;
+    display: flex;
+    padding: 0 50px;
+}
+.box_animation {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    flex: 0.5;
+    padding: 50px;
+}
+.box_animation .box{
+    height: 200px;
+    width: 200px;
+    background-color: #547274;
+}
+
+.chart_animation{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+
+}
+
+.chart_animation h1{
+    font-size: 40px;
+}
+
+.rect_animation{
+    display: flex;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.rect_animation .rect {
+    height: 100px;
+    width: 50px;
+    margin-left: 20px;
+    background-color: #547274;
+
+}
+
+.rect:first-child{
+    height: 100px;
+    margin-top: 400px;
+}
+.rect:nth-child(2){
+    height: 200px;
+    margin-top: 300px;
+}
+.rect:nth-child(3){
+    height:300px;
+    margin-top: 200px;
+}
+.rect:nth-child(4){
+    height:400px;
+    margin-top: 100px;
+}
+.rect:last-child{
+    height:500px;
 }
