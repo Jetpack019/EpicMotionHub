@@ -91,36 +91,22 @@ section .scroll_animation_in {
     font-size: 40px;
 }
 
-.rect_animation{
+.skills-container {
     display: flex;
-    position: absolute;
-    margin-top: 50px;
 }
 
-.rect_animation .rect {
-    height: 100px;
+.skill-bar{
+    height: 500px;
     width: 50px;
-    margin-left: 20px;
+    transform: rotate(180deg);
+    margin-right: 20px
+}
+
+.skill-per{
+    width: 50px;
     background-color: #547274;
+    height: 0;
+    transition: 1s linear;
+    position: relative;
 
-}
-
-.rect:first-child{
-    height: 100px;
-    margin-top: 400px;
-}
-.rect:nth-child(2){
-    height: 200px;
-    margin-top: 300px;
-}
-.rect:nth-child(3){
-    height:300px;
-    margin-top: 200px;
-}
-.rect:nth-child(4){
-    height:400px;
-    margin-top: 100px;
-}
-.rect:last-child{
-    height:500px;
 }
