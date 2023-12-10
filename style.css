@@ -91,22 +91,118 @@ section .scroll_animation_in {
     font-size: 40px;
 }
 
-.skills-container {
+.chart-container {
     display: flex;
 }
 
-.skill-bar{
+.chart-bar{
     height: 500px;
     width: 50px;
     transform: rotate(180deg);
     margin-right: 20px
 }
 
-.skill-per{
+.chart-per{
     width: 50px;
     background-color: #547274;
     height: 0;
     transition: 1s linear;
     position: relative;
 
+}
+
+
+
+section .scroll_around_animation {
+    height: 100vh;
+    display: flex;
+    margin-top: 100px;
+}
+
+.grid_box_animation{
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+
+}
+
+.grid_box_animation h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.rounded_box_container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
+.rounded_box {
+    height: 70px;
+    width: 80px;
+    background-color: #547274;
+    border-radius: 25%;
+}
+
+
+
+.circle_animation{
+        flex: 0.5;
+        margin-left: 50px;
+        padding: 50px;
+}
+
+#circle1_3 {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #92BCFC;
+    position: absolute;
+
+}
+
+#circle2_3 {
+    height: 90px;
+    width:  90px;
+    background-color: #749BFF;
+    position: absolute;
+    transform: translate(-30px, -50px);
+    border-radius: 50%;
+}
+
+#circle3_3 {
+    height: 90px;
+    width:  90px;
+    background-color: #3FE3B2;
+    position: absolute;
+    transform: translate(-100px, 100px);
+    border-radius: 50%;
+}
+
+#circle4_3 {
+    height: 90px;
+    width:  90px;
+    background-color: #68F6FF;
+    position: absolute;
+    transform: translate(50px, 300px);
+    border-radius: 50%;
+}
+
+#circle5_3 {
+    height: 90px;
+    width:  90px;
+    background-color: #55EA87;
+    position: absolute;
+    transform: translate(250px, 200px);
+    border-radius: 50%;
+}
+
+#circle6_3 {
+    height: 90px;
+    width:  90px;
+    background-color: #C971FF;
+    position: absolute;
+    transform: translate(220px, -70px);
+    border-radius: 50%;
 }

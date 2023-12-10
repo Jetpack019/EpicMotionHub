@@ -46,26 +46,58 @@
             </div>
             <div class="chart_animation">
                 <h1>Scroll Going In</h1>
-                <div class="skills-container">
-                    <div class="skill-bar">
-                        <div class="skill-per" per="45"></div>
+                <div class="chart-container">
+                    <div class="chart-bar">
+                        <div class="chart-per" per="45"></div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-per" per="55"></div>
+                    <div class="chart-bar">
+                        <div class="chart-per" per="55"></div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-per" per="65"></div>
+                    <div class="chart-bar">
+                        <div class="chart-per" per="65"></div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-per" per="85"></div>
+                    <div class="chart-bar">
+                        <div class="chart-per" per="85"></div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-per" per="100"></div>
+                    <div class="chart-bar">
+                        <div class="chart-per" per="100"></div>
                     </div>
                 </div>
                 
             </div>
 
+        </div>
+    </section>
+
+
+    <section>
+        <div class="scroll_around_animation">
+            <div class="grid_box_animation">
+                <h1>Scroll Going In</h1>
+                <div class="rounded_box_container">
+                    <div class="rounded_box"></div>
+                    <div class="rounded_box"></div>
+                    <div class="rounded_box"></div>
+                    <div class="rounded_box"></div>
+                    <div class="rounded_box"></div>
+                    <div class="rounded_box"></div>
+                    <div class="rounded_box"></div>
+                    <div class="rounded_box"></div>
+                    <div class="rounded_box"></div>
+                    <div class="rounded_box"></div>
+                </div>
+            </div>
+
+            <div class="circle_animation">
+                <div class="circle_container">
+                    <div class="circle_3" id="circle1_3"></div>
+                    <div class="circle_3" id="circle2_3"></div>
+                    <div class="circle_3" id="circle3_3"></div>
+                    <div class="circle_3" id="circle4_3"></div>
+                    <div class="circle_3" id="circle5_3"></div>
+                    <div class="circle_3" id="circle6_3"></div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -105,7 +137,7 @@
                         'transition': 'transform 2s ease',
                     })
 
-                    $('.skill-per').each(function(){
+                    $('.chart-per').each(function(){
                         var $this = $(this);
                         var per = $this.attr('per');
                         $this.css("height",per + "%");
