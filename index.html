@@ -183,27 +183,36 @@
                 let sec3 = $("section")[2]; 
                 let offset3 = sec3.offsetTop - 150;
                 let height3 = sec3.offsetHeight;
-
                 if (top >= offset3 && top < offset3 + height3) {
-                    $(".grid_box_animation").css({
+                    $(".grid_box_animation h1").css({
                         'transform': 'translateX(0px)',
                         'transition': 'transform 1s ease',
                     });
-                    
+                
+                    $(".rounded_box").each(function(index) {
+                        var delay = (index + 1) * 1; // Adjust the multiplier to set the desired delay
+                        $(this).css({
+                            'transform': 'translateX(0px)',
+                            'transition': 'transform 0.5s ease ' + delay + 's',
+                        });
+                    });
+                
                     $(".circle_animation").css({
                         'transform': 'translateX(0px)',
                         'transition': 'transform 1s ease',
                     });
-                    
-                } else{
-                    $(".grid_box_animation").css({
-                        'transform': 'translateX(1500px)',
-                    });   
+                } else {
+                    $(".grid_box_animation h1, .circle_animation").css({
+                        'transform': 'translateY(1500px)',
+                    });
 
-                    $(".circle_animation").css({
-                        'transform': 'translateX(-1500px)',
-                    });   
+                    $(".rounded_box:lt(13)").css({
+                        'transform': 'translateX(-4500px)',
+                        'transition': 'transform 1s ease', // Adjust the duration as needed
+                    });
                 }
+                
+                
              })
     
         });
