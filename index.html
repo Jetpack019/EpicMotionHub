@@ -75,17 +75,23 @@
             <div class="grid_box_animation">
                 <h1>Scroll Going In</h1>
                 <div class="rounded_box_container">
-                    <div class="rounded_box"></div>
-                    <div class="rounded_box"></div>
-                    <div class="rounded_box"></div>
-                    <div class="rounded_box"></div>
-                    <div class="rounded_box"></div>
-                    <div class="rounded_box"></div>
-                    <div class="rounded_box"></div>
-                    <div class="rounded_box"></div>
-                    <div class="rounded_box"></div>
-                    <div class="rounded_box"></div>
+                    <div class="rounded_box" style="background-color: #3FE3B2;" id="rounded_box_1"></div>
+                    <div class="rounded_box" style="background-color: #C971FF;" id="rounded_box_2"></div>
+                    <div class="rounded_box" style="background-color: #3FE3B2;" id="rounded_box_3"></div>
+                    <div class="rounded_box" style="background-color: #749BFF;" id="rounded_box_4"></div>
+                    <div class="rounded_box" style="background-color: #92BCFC;" id="rounded_box_5"></div>
+                    <div class="rounded_box" style="background-color: #55EA87;" id="rounded_box_6"></div>
+                    <div class="rounded_box" style="background-color: #68F6FF;" id="rounded_box_7"></div>
+                    <div class="rounded_box" style="background-color: #C971FF;" id="rounded_box_8"></div>
+                    <div class="rounded_box" style="background-color: #92BCFC;" id="rounded_box_9"></div>
+                    <div class="rounded_box" style="background-color: #3FE3B2;" id="rounded_box_10"></div>
+
                 </div>
+               <div class="bottom_rounded_box">
+                    <div class="rounded_box" id="rounded_box_11"></div>
+                    <div class="rounded_box" id="rounded_box_12"></div>
+                    <div class="rounded_box" id="rounded_box_13"></div>
+               </div> 
             </div>
 
             <div class="circle_animation">
@@ -170,6 +176,33 @@
                         'transform': 'translateX(-1100px)',
                     })
 
+                }
+
+
+
+                let sec3 = $("section")[2]; 
+                let offset3 = sec3.offsetTop - 150;
+                let height3 = sec3.offsetHeight;
+
+                if (top >= offset3 && top < offset3 + height3) {
+                    $(".grid_box_animation").css({
+                        'transform': 'translateX(0px)',
+                        'transition': 'transform 1s ease',
+                    });
+                    
+                    $(".circle_animation").css({
+                        'transform': 'translateX(0px)',
+                        'transition': 'transform 1s ease',
+                    });
+                    
+                } else{
+                    $(".grid_box_animation").css({
+                        'transform': 'translateX(1500px)',
+                    });   
+
+                    $(".circle_animation").css({
+                        'transform': 'translateX(-1500px)',
+                    });   
                 }
              })
     

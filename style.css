@@ -66,6 +66,7 @@ section .scroll_animation_in {
     height: 100vh;
     display: flex;
     padding: 0 50px;
+    margin-top: 100px;
 }
 .box_animation {
     display: grid;
@@ -112,17 +113,17 @@ section .scroll_animation_in {
 }
 
 
-
+/* Scroll Around */
 section .scroll_around_animation {
     height: 100vh;
     display: flex;
-    margin-top: 100px;
+
 }
 
 .grid_box_animation{
     display: flex;
     flex-direction: column;
-    margin: 60px;
+    margin:0px 60px;
 
 }
 
@@ -145,11 +146,37 @@ section .scroll_around_animation {
     border-radius: 25%;
 }
 
+.bottom_rounded_box {
+    display: flex;
+
+}
+.bottom_rounded_box .rounded_box{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.bottom_rounded_box .rounded_box:nth-child(1){
+    height: 110px;
+    width: 110px;
+    border-radius: 35%;
+    background-color: #3FE3B2;
+}
+.bottom_rounded_box .rounded_box:nth-child(2){
+    height: 110px;
+    width: 150px;
+    border-radius: 35%;
+    background-color: #3FE3B2;
+}
+.bottom_rounded_box .rounded_box:nth-child(3){
+    height: 110px;
+    width: 210px;
+    border-radius: 25%;
+    background-color: #92BCFC;
+}
 
 
 .circle_animation{
         flex: 0.5;
-        margin-left: 50px;
+        margin-left: 100px;
         padding: 50px;
 }
 
