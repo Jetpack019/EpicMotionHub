@@ -174,12 +174,16 @@ section .scroll_around_animation {
 }
 
 
+
+
 .circle_animation{
         flex: 0.5;
         margin-left: 100px;
         padding: 50px;
 }
-
+.circle_3 {
+    margin: 100px;
+}
 #circle1_3 {
     height: 300px;
     width: 300px;
@@ -199,8 +203,8 @@ section .scroll_around_animation {
 }
 
 #circle3_3 {
-    height: 90px;
-    width:  90px;
+    height: 70px;
+    width:  70px;
     background-color: #3FE3B2;
     position: absolute;
     transform: translate(-100px, 100px);
@@ -208,8 +212,8 @@ section .scroll_around_animation {
 }
 
 #circle4_3 {
-    height: 90px;
-    width:  90px;
+    height: 100px;
+    width:  100px;
     background-color: #68F6FF;
     position: absolute;
     transform: translate(50px, 300px);
@@ -217,8 +221,8 @@ section .scroll_around_animation {
 }
 
 #circle5_3 {
-    height: 90px;
-    width:  90px;
+    height: 80px;
+    width:  80px;
     background-color: #55EA87;
     position: absolute;
     transform: translate(250px, 200px);
@@ -226,8 +230,8 @@ section .scroll_around_animation {
 }
 
 #circle6_3 {
-    height: 90px;
-    width:  90px;
+    height: 120px;
+    width:  120px;
     background-color: #C971FF;
     position: absolute;
     transform: translate(220px, -70px);

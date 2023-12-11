@@ -96,7 +96,7 @@
 
             <div class="circle_animation">
                 <div class="circle_container">
-                    <div class="circle_3" id="circle1_3"></div>
+                    <div id="circle1_3"></div>
                     <div class="circle_3" id="circle2_3"></div>
                     <div class="circle_3" id="circle3_3"></div>
                     <div class="circle_3" id="circle4_3"></div>
@@ -201,6 +201,7 @@
                         'transform': 'translateX(0px)',
                         'transition': 'transform 1s ease',
                     });
+                    animateCircles2()
                 } else {
                     $(".grid_box_animation h1, .circle_animation").css({
                         'transform': 'translateY(1500px)',
@@ -249,6 +250,42 @@
             // Start the circular motion
             requestAnimationFrame(moveCircles);
         }
+
+        function animateCircles2() {
+            function moveCircles(timestamp) {
+                var duration = 6000;
+                var progress = timestamp % duration / duration;
+        
+                var angles = [
+                    progress * 2 * Math.PI,
+                    (progress + 1 / 5) * 3 * Math.PI,
+                    (progress + 2 / 5) * 5 * Math.PI,
+                    (progress + 3 / 5) * 2 * Math.PI,
+                    (progress + 4 / 5) * 4 * Math.PI,
+                    (progress + 5 / 5) * 1 * Math.PI
+                ];
+        
+                var radius = 170;
+        
+                // Select all circles with class circle_3
+                $('.circle_3').each(function (index) {
+                    var x = Math.cos(angles[index]) * radius;
+                    var y = Math.sin(angles[index]) * radius;
+                    $(this).css({ transform: 'translate(' + x + 'px, ' + y + 'px)' });
+                });
+        
+                requestAnimationFrame(moveCircles);
+            }
+        
+            requestAnimationFrame(moveCircles);
+        }
+        
+        // Call the animation function
+        animateCircles2();
+        
+        
+  
+        
     </script>
 </body>
 
