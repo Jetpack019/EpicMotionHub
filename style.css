@@ -237,3 +237,51 @@ section .scroll_around_animation {
     transform: translate(220px, -70px);
     border-radius: 50%;
 }
+
+
+/* Scroll Stack Animation */
+section .scroll_stack_animation{
+    height: 100vh;
+    display: flex;
+}
+
+.stack_left{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+}
+
+.rounded_rect{
+    height: 70px;
+    width: 80px;
+    background-color: #547274;
+    border-radius: 25%;
+}
+
+.stack_right{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+}
+
+.device_container{
+    display: flex;
+}
+
+.cp_container{
+    position: absolute;
+}
+
+.base_cp{
+    height: 200px;
+    width: 100px;
+    background-color: #D9D9D9;
+    border-radius: 10%;
+}
+
+.lcd_cp{
+    height: 150px;
+    width: 80px;
+    background-color: #D9D9D9;
+    border-radius: 10%;
+}
